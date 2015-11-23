@@ -1,1 +1,82 @@
+.container-fluid,
+.container {
+  // Disable large-desktop breakpoint.
+  max-width: $screen-md;
+}
+
+body, p { font-family: $bodyfont;}
+
+h1, h2, h3, h4, h5, h6, #menu li a 
+{
+	font-family: $headerfont;
+}
+
+a {color: $dark;}
+a:hover {color: $turq; text-decoration: none;}
+
+
+// Header
+
+header .container{text-align: center;}
+.brand { 
+
+} 
+.site-name {
+	font-size: 5em; 
+	span{font-size: 1.2em;}text-decoration: none; 
+	background: url(../images/line.png) no-repeat 80% 100%;
+	padding-bottom: 4px;
+	white-space: nowrap;
+	background-size: contain;
+	&:after {
+
+	}
+}
+.navbar-default {
+    background-color: transparent;
+    border: none;
+}
+#menu-main {
+	text-align: left;
+	display: flex;
+	li{
+		flex:1;
+		a {
+			font-family: $headerfont;
+			font-size: 2em;
+			  padding: 0;
+			
+		 }
+		 &:first-of-type a{ padding-left: 0;}
+		&:last-of-type a{padding-right: 0;}
+	}flex:1;	
+}
+.nav > li > a:focus, .nav > li > a:hover {
+    background-color: transparent;
+ }
+
+.page-header {
+	margin-top: 0;
+	border-bottom: none;
+	h1 {margin-top: 0;}
+}
+
+
+// Footer
+
+footer .container{
+	border-top: 1px solid;	
+	margin-top: 20px;
+	padding: 20px 0 ;
+}
+
+#sponsors {
+	list-style: none;
+	// padding-left:0;
+	li {
+		display: inline-block;
+		vertical-align: bottom;
+	}
+}
+
 

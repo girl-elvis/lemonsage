@@ -1,3 +1,5 @@
+// this page comes in before bootstrap so can't override any BS
+
 // Glyphicons font path
 $icon-font-path:        "../fonts/";
 
@@ -5,5 +7,30 @@ $icon-font-path:        "../fonts/";
 $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
 
+
+
 // Colors
 $brand-primary:         #27ae60;
+$dark:	#333;
+$orange: #E5B860;
+$blue: #A7D5DC;
+$yellow: #E3E84E;
+$turq: #49B0A0;
+$pink: #C492C2;
+$green: #B6D89D;
+
+
+
+.offscreen {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans+Condensed:300|Open+Sans);
+$bodyfont:  'Open Sans', sans-serif;
+$headerfont:  'Amatic SC', cursive;

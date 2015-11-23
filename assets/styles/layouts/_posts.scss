@@ -1,0 +1,86 @@
+// Front Page
+.home .page-header {
+	@extend .offscreen;
+}
+
+.sectors ul{
+	list-style: none;
+	padding-left: 0;
+	li{
+		@extend .col-sm-6 ;
+		padding-left: 0;
+		display: block;
+		
+		margin-bottom: 10px;
+		.bgimg {
+			background-position: right top ;
+			background-size: auto 100%;
+		}
+		.desc {
+			font-family: $headerfont;
+			width: 70%;
+			padding: 0 0 0 10px;
+		    text-decoration: none;
+		    color: $dark;
+		    display: inline-block;
+		    font-size: 2em;
+		    border-right: 79px solid transparent;
+		    border-bottom: 160px solid $orange;
+		    height: 0;
+		    line-height: 26px;
+			margin-right: 24%;
+			h2 {
+				margin-top: 10px;
+			}
+			span {
+				display: block;
+				width: 130%;
+			}
+			
+     
+		}
+			&:nth-of-type(2) .desc {border-bottom-color: $blue;}
+			&:nth-of-type(3) .desc {border-bottom-color: $yellow;}
+			&:nth-of-type(4) .desc {border-bottom-color: $turq;}
+			&:nth-of-type(5) .desc {border-bottom-color: $pink;}
+			&:nth-of-type(6) .desc {border-bottom-color: $green;}
+	}
+}
+
+#custom-bg {
+	background-repeat: no-repeat;
+	background-position: right top;
+	width: 100%;
+}
+.page .desc{
+	display: inline-block;
+	font-size: 1em;
+	border-right: 50px solid transparent;
+	border-bottom: 55px solid rgb(229, 184, 96);
+	height: 0px;
+	margin-right: 24%;
+	line-height: 9px;
+	padding-left: 10px;
+	h2 {margin-top: 10px}
+	
+width: 90%;
+padding-left: 10px;
+}
+
+
+
+
+// Media Queries - will override all except for tinymce
+
+@media(max-width:767px){
+	
+}
+@media(min-width:768px){ 
+	.site-name {font-size: 9em; }
+	// .sectors ul li .desc span {width: 130%;}
+	#menu-main li a {text-align: center;}
+}
+@media(min-width:992px){ 
+	.site-name {font-size: 11em; }
+	// .sectors ul li .desc span {width: 130%;}
+}

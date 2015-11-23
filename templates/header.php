@@ -1,6 +1,18 @@
-<header class="banner">
+<header class="banner navbar navbar-default navbar-static-top">
   <div class="container">
-    <a class="brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+
+<?php 
+$string = get_bloginfo('name'); 
+
+function replace_first_word($str, $format) {
+    return preg_replace('/(?:^|\b)(\p{L})(\p{L}*)/u', str_replace('{L}', '$1', $format).'$2', $str);
+}
+$site = replace_first_word($string, '<span>$1</span>')
+?>
+
+    <a class="brand" href="<?= esc_url(home_url('/')); ?>"><h1 class="site-name"><?php echo $site; ?></h1></a>
+
+
     <nav class="nav-primary">
       <?php
       if (has_nav_menu('primary_navigation')) :
