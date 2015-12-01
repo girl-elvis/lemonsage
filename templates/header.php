@@ -1,4 +1,5 @@
 <header class="banner navbar navbar-default navbar-static-top">
+  <?php echo do_shortcode('[google-translator]'); ?>
   <div class="container">
 
 <?php 
@@ -9,6 +10,7 @@ function replace_first_word($str, $format) {
 }
 $site = replace_first_word($string, '<span>$1</span>')
 ?>
+  <h2 class="sitedesc"><?php echo get_bloginfo('description') ?></h2>
 
     <a class="brand" href="<?= esc_url(home_url('/')); ?>"><h1 class="site-name"><?php echo $site; ?></h1></a>
 

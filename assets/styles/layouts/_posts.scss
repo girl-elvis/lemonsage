@@ -15,6 +15,7 @@
 		.bgimg {
 			background-position: right top ;
 			background-size: auto 100%;
+			max-height: $homeblocks;
 		}
 		.desc {
 			font-family: $headerfont;
@@ -25,7 +26,7 @@
 		    display: inline-block;
 		    font-size: 2em;
 		    border-right: 79px solid transparent;
-		    border-bottom: 160px solid $orange;
+		    border-bottom: $homeblocks solid $orange;
 		    height: 0;
 		    line-height: 26px;
 			margin-right: 24%;
@@ -51,12 +52,13 @@
 	background-repeat: no-repeat;
 	background-position: right top;
 	width: 100%;
+	max-height: $titlestrips;
 }
 .page .desc{
 	display: inline-block;
 	font-size: 1em;
 	border-right: 50px solid transparent;
-	border-bottom: 55px solid rgb(229, 184, 96);
+	border-bottom: $titlestrips solid rgb(229, 184, 96);
 	height: 0px;
 	margin-right: 24%;
 	line-height: 9px;

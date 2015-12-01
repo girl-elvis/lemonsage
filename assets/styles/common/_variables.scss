@@ -19,7 +19,8 @@ $turq: #49B0A0;
 $pink: #C492C2;
 $green: #B6D89D;
 
-
+$titlestrips: 55px;
+$homeblocks: 160px;
 
 .offscreen {
   position:absolute;
@@ -34,3 +35,5 @@ $green: #B6D89D;
 @import url(https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans+Condensed:300|Open+Sans);
 $bodyfont:  'Open Sans', sans-serif;
 $headerfont:  'Amatic SC', cursive;
+
+

@@ -15,8 +15,8 @@
  
         <li> <a href=<?php the_sub_field('link'); ?> >
         	<div class="bgimg" style="background-image:url(<?php echo $image[0]; ?>);"><div class='desc'>
-	        	<h2><?php the_sub_field('title'); ?> </h2>
-	         	<span><?php the_sub_field('text'); ?></span>
+	        	<h2 class="notranslate"><?php the_sub_field('title'); ?> </h2>
+	         	<span class="notranslate"><?php the_sub_field('text'); ?></span>
 		     </div> </div>
 		 </a>
      </li>
