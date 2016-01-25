@@ -6,10 +6,15 @@
 
 body, p { font-family: $bodyfont;}
 
-h1, h2, h3, h4, h5, h6, #menu li a 
+h1, h2, h3, h4, h5, h6
 {
-	font-family: $headerfont;
+	
 }
+.sectors h2,
+h2.sitedesc,
+h1.site-name,
+#menu li a {font-family: $headerfont;}
+
 
 a {color: $dark;}
 a:hover {color: $turq; text-decoration: none;}
